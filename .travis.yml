@@ -26,8 +26,7 @@ script:
   - cd build
   - cmake -GNinja -DCMAKE_PREFIX_PATH=/usr/local/opt/llvm/ ..
   - ninja install
-# Test IWYU
- - cd ..
- - python run_iwyu_tests.py -- build/bin/include-what-you-use
- - python fix_includes_test.py
- - python iwyu_tool_test.py
+  - cd ..
+  - python run_iwyu_tests.py -- build/bin/include-what-you-use
+  - python fix_includes_test.py
+  - python iwyu_tool_test.py
