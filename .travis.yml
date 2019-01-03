@@ -8,6 +8,7 @@ addons:
     - llvm
     - cmake
     - ninja
+    update: true
 
 before_script:
   - LDFLAGS='-L/usr/local/opt/llvm/lib -W1,-rpath,/usr/local/opt/llvm/lib'
