@@ -19,12 +19,6 @@ env:
   - C_COMPILER='/usr/local/opt/llvm/bin/clang'
   - BUILD_TYPE='Release'
 
-before_install:
-  - echo "before_install says hi"
-
-before_script:
-  - echo "before_script says hi"
-
 script:
 # Build IWYU
   - mkdir build
