@@ -9,7 +9,7 @@ addons:
     - cmake
     - ninja
 
-env:
+before_script:
   - LDFLAGS='-L/usr/local/opt/llvm/lib -W1,-rpath,/usr/local/opt/llvm/lib'
   - CPPFLAGS='-I/usr/local/opt/llvm/include'
   - C_INCLUDE_PATH='/usr/local/opt/llvm/include'
@@ -21,6 +21,7 @@ env:
 
 script:
 # Build IWYU
+# comment
   - mkdir build
   - cd build
   - cmake -GNinja -DCMAKE_PREFIX_PATH=/usr/local/opt/llvm/ ..
