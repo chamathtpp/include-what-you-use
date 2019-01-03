@@ -23,6 +23,7 @@ before_install:
 
 script:
 # Build IWYU
+# comment
  - mkdir build
  - cd build
  - cmake -GNinja -DCMAKE_PREFIX_PATH=$ROOT_PATH -DCMAKE_C_COMPILER=$BIN_PATH/clang -DCMAKE_CXX_COMPILER=$BIN_PATH/clang++ -DCMAKE_INSTALL_PREFIX=./ ../
